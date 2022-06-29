@@ -1,0 +1,17 @@
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.deps.json
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ref\ShopManagmant.Domin.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.pdb
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\0_Framework.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagemant.ApplicationContract.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\0_Framework.pdb
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagemant.ApplicationContract.pdb
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.csproj.AssemblyReference.cache
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.GeneratedMSBuildEditorConfig.editorconfig
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.AssemblyInfoInputs.cache
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.AssemblyInfo.cs
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.csproj.CoreCompileInputs.cache
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.csproj.CopyComplete
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ref\ShopManagmant.Domin.dll
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.pdb

@@ -1,0 +1,15 @@
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\ShopManagemant.ApplicationContract.deps.json
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\ShopManagemant.ApplicationContract.dll
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\ref\ShopManagemant.ApplicationContract.dll
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\ShopManagemant.ApplicationContract.pdb
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\0_Framework.dll
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\bin\Debug\net6.0\0_Framework.pdb
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.csproj.AssemblyReference.cache
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.GeneratedMSBuildEditorConfig.editorconfig
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.AssemblyInfoInputs.cache
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.AssemblyInfo.cs
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.csproj.CoreCompileInputs.cache
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.csproj.CopyComplete
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.dll
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ref\ShopManagemant.ApplicationContract.dll
+F:\Home Appliances\HA_project\ShopManagemant.ApplicationContract\obj\Debug\net6.0\ShopManagemant.ApplicationContract.pdb

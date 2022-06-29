@@ -1,0 +1,412 @@
+{
+  "format": 1,
+  "restore": {
+    "F:\\Home Appliances\\HA_project\\ServiceHost\\ServiceHost.csproj": {}
+  },
+  "projects": {
+    "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj",
+        "projectName": "0_Framework",
+        "projectPath": "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\0_Framework\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Home Appliances\\HA_project\\ServiceHost\\ServiceHost.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\ServiceHost\\ServiceHost.csproj",
+        "projectName": "ServiceHost",
+        "projectPath": "F:\\Home Appliances\\HA_project\\ServiceHost\\ServiceHost.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\ServiceHost\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj"
+              },
+              "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj"
+              },
+              "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\ShopManagtemant.Infrastructure.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\ShopManagtemant.Infrastructure.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.CodeAnalysis.Features": {
+              "target": "Package",
+              "version": "[4.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj",
+        "projectName": "ShopManagemant.ApplicationContract",
+        "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj",
+        "projectName": "ShopManagemant.Application",
+        "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj"
+              },
+              "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj"
+              },
+              "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj",
+        "projectName": "ShopManagmant.Domin",
+        "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\0_Framework\\0_Framework.csproj"
+              },
+              "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.ApplicationContract\\ShopManagemant.ApplicationContract.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\ShopManagtemant.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\ShopManagtemant.Infrastructure.csproj",
+        "projectName": "ShopManagtemant.Infrastructure",
+        "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\ShopManagtemant.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
+        "outputPath": "F:\\Home Appliances\\HA_project\\ShopManagtemant.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Administrator\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj": {
+                "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagmant.Domin\\ShopManagmant.Domin.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.6, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.6, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
