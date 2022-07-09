@@ -32,7 +32,7 @@ namespace ShopManagemant.Application
         {
             var opretaion = new OperationResult();
 
-            if (_reposetory.Exist(x=>x.Title==comand.Title &&x.Id==comand.Id))
+            if (_reposetory.Exist(x=>x.Title==comand.Title &&x.Id!=comand.Id))
             {
                 return opretaion.faild("رکورد وارد شده موجود است ");
             }
@@ -71,6 +71,16 @@ namespace ShopManagemant.Application
         public List<ProductCategoryViewModel> All(SearchModel command)
         {
             return _reposetory.searches(command);
+        }
+
+        public List<ProductCategoryViewModel> full()
+        {
+            return _reposetory.myAll();
+        }
+
+        public List<ProductCategoryViewModel> allcategory()
+        {
+            return _reposetory.getcategory().ToList();
         }
     }
 }

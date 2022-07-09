@@ -1,8 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using ShopManagemant.Application;
+using ShopManagemant.ApplicationContract.Product;
 using ShopManagemant.ApplicationContract.ProductCategory;
+using ShopManagmant.Domin.Product;
 using ShopManagmant.Domin.ProductCategory;
-using ShopManagtemant.Infrastructure;
+using ShopManagtemant.Infrastructure.Reposetory;
 using ShopManagtemant.Infrastructure.ShopContext;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -11,6 +13,10 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 builder.Services.AddTransient<IReposetory, Reposetory>();
 builder.Services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
+builder.Services.AddTransient<IProductApplication, ProductApplication>();
+builder.Services.AddTransient<IProductReposetory, ProductReposetory>();
+
+
 var conectionstring = builder.Configuration.GetConnectionString("Application");
 builder.Services.AddDbContext<MyContext>(x => x.UseSqlServer(conectionstring));
 

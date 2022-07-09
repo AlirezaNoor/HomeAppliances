@@ -28,6 +28,12 @@ namespace ShopManagmant.Domin.ProductCategory
         public string MetaDiscription { get; private set; }
         [Required(ErrorMessage = ValidationforDomian.validatation)]
         public string Slug { get; private set; }
+        public List<Product.Product> product { get; set; }
+
+        public ProductCategores()
+        {
+     product=new List<Product.Product>();
+        }
 
         public ProductCategores(string title, string discription, string picture, string alt, string imageTitle, string keywords, string metaDiscription, string slug)
         {

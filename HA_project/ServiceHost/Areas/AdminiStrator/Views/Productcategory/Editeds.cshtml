@@ -1,21 +1,24 @@
 ﻿@model ServiceHost.Areas.AdminiStrator.Models.ProductCategory.ProductCategoryView
-<form 
-
-    asp-action="Editeds">
-    <div class="modal-body" style="background:cornflowerblue;">
+@{
+    Layout = null;
+}
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="Editeds"   onsubmit="return jQueryAjaxPost(this);">
+    <div class="modal-body">
         <div class="row">
             <div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Edited.Title" class="control-label">نام</label>
-                    <input type="text" class="form-control" asp-for="Edited.Title" onchange="makeSlug('Name', 'Slug')">
-                    <input type="hidden" class="form-control" asp-for="Edited.Id" >
+                    <input type="text" class="form-control" asp-for="Edited.Title" id="keydown" >
+                    <input type="hidden" class="form-control" asp-for="Edited.Id" id="keydown" >
 
                     <span asp-validation-for="Edited.Title" class="error"></span>
                 </div>
             </div><div class="col-md-6">
                 <div class="form-group">
                     <label asp-for="Edited.Slug" class="control-label">اسلاگ</label>
-                    <input type="text" class="form-control" asp-for="Edited.Slug" readonly="readonly">
+                    <input type="text" class="form-control" asp-for="Edited.Slug" id="result" readonly="readonly">
                     <span asp-validation-for="Edited.Slug" class="error"></span>
                 </div>
             </div>
@@ -24,7 +27,7 @@
             <div class="col-md-12">
                 <div class="form-group">
                     <label asp-for="Edited.Picture" class="control-label">عکس</label>
-                    <input type="text" class="form-control" asp-for="Edited.Picture" accept="image/*">
+                    <input type="text" class="form-control" asp-for="Edited.Picture">
                     <span asp-validation-for="Edited.Picture" class="error"></span>
                 </div>
             </div>
@@ -49,7 +52,7 @@
             <div class="col-md-12">
                 <div class="form-group no-margin">
                     <label asp-for="Edited.Discription" class="control-label">توضیحات</label>
-                    <textarea class="form-control autogrow" asp-for="Edited.Discription" onchange="fillField('Description', 'MetaDescription')"
+                    <textarea class="form-control autogrow" asp-for="Edited.Discription" 
                               style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
                     <span asp-validation-for="Edited.Discription" class="error"></span>
                 </div>
@@ -76,11 +79,12 @@
         </div>
     </div>
     <div class="modal-footer">
-
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
         <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
     </div>
 </form>
+    </div>
+</div>
 
 
-    <script src="~/Administrator/assets/js/sitemodal.js"></script>
 

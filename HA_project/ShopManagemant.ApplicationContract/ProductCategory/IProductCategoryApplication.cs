@@ -8,6 +8,8 @@ namespace ShopManagemant.ApplicationContract.ProductCategory
         OperationResult Edited(Edited comand);
         Edited fildinput(long id);
         List<ProductCategoryViewModel> All(SearchModel command);
+        List<ProductCategoryViewModel> full();
+        List<ProductCategoryViewModel> allcategory();
 
     }
 }

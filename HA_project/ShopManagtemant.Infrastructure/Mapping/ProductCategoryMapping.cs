@@ -23,6 +23,7 @@ namespace ShopManagtemant.Infrastructure.Mapping
             builder.Property(x => x.Keywords).HasMaxLength(80).IsRequired();
             builder.Property(x => x.MetaDiscription).HasMaxLength(200).IsRequired();
             builder.Property(x => x.Slug).HasMaxLength(200).IsRequired();
+            builder.HasMany(x => x.product).WithOne(x => x.categoryname).HasForeignKey(x => x.CategoryId);
         }
     }
 }

@@ -1,0 +1,90 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.ProductCategory.ProductCategoryView
+@{
+    Layout = null;
+}
+<div class="row">
+    <div class="col-md-6">
+        <form asp-action="sendTodatabase"   onsubmit="return jQueryAjaxPost(this);">
+    <div class="modal-body">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="create.Title" class="control-label">نام</label>
+                    <input type="text" class="form-control" asp-for="create.Title" id="keydown" >
+                    <input type="hidden" class="form-control" asp-for="Edited.Id" id="keydown" >
+
+                    <span asp-validation-for="create.Title" class="error"></span>
+                </div>
+            </div><div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="create.Slug" class="control-label">اسلاگ</label>
+                    <input type="text" class="form-control" asp-for="create.Slug" id="result">
+                    <span asp-validation-for="create.Slug" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="create.Picture" class="control-label">عکس</label>
+                    <input type="text" class="form-control" asp-for="create.Picture">
+                    <span asp-validation-for="create.Picture" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="create.Alt" class="control-label">Alt</label>
+                    <input type="text" class="form-control" asp-for="create.Alt">
+                    <span asp-validation-for="create.Alt" class="error"></span>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label asp-for="create.ImageTitle" class="control-label">عنوان</label>
+                    <input type="text" class="form-control" asp-for="create.ImageTitle">
+                    <span asp-validation-for="create.ImageTitle" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="create.Discription" class="control-label">توضیحات</label>
+                    <textarea class="form-control autogrow" asp-for="create.Discription" 
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="create.Discription" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label asp-for="create.Keywords" class="control-label">کلمات کلیدی</label>
+                    <input type="text" class="form-control" asp-for="create.Keywords">
+                    <span asp-validation-for="create.Keywords" class="error"></span>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group no-margin">
+                    <label asp-for="create.MetaDiscription" class="control-label">توضیحات متا</label>
+                    <textarea class="form-control autogrow" asp-for="create.MetaDiscription"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                    <span asp-validation-for="create.MetaDiscription" class="error"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-default waves-effect" data-dismiss="modal">بستن</button>
+        <button type="submit" class="btn btn-info waves-effect waves-light">ایجاد</button>
+    </div>
+</form>
+    </div>
+</div>
+
+
+

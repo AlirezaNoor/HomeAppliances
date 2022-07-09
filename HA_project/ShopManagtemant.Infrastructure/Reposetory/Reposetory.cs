@@ -1,10 +1,9 @@
-﻿using System.Linq.Expressions;
-using _0_Framework.Infrastructure;
+﻿using _0_Framework.Infrastructure;
 using ShopManagemant.ApplicationContract.ProductCategory;
 using ShopManagmant.Domin.ProductCategory;
 using ShopManagtemant.Infrastructure.ShopContext;
 
-namespace ShopManagtemant.Infrastructure
+namespace ShopManagtemant.Infrastructure.Reposetory
 {
     public class Reposetory:GenericReposetory<long,ProductCategores>, IReposetory
     {
@@ -31,5 +30,25 @@ namespace ShopManagtemant.Infrastructure
         }
 
 
+
+        public List<ProductCategoryViewModel> myAll()
+        {
+            return _context.Pgdbset.Select(x => new ProductCategoryViewModel()
+            {
+                Title = x.Title,
+                Crationdate = x.datetime.ToString(),
+                Picture = x.Picture,
+                Id = x.Id
+            }).ToList();
+        }
+
+        public List<ProductCategoryViewModel> getcategory()
+        {
+            return _context.Pgdbset.Select(x => new ProductCategoryViewModel
+            {
+                Title = x.Title,
+                Id = x.Id
+            }).ToList();
+        }
     }
 }

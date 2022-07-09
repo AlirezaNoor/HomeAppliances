@@ -1,0 +1,127 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Product.ProductModels
+@{
+    Layout = null;
+}
+<div class="row" id="test">
+    <div class="col-md-6">
+        <form asp-action="Editeds" asp-controller="Product"   onsubmit="return jQueryAjaxPost(this);">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.Name" class="control-label">نام</label>
+                            <input type="text" class="form-control" asp-for="edit.Name" id="keydown" >
+                            <input type="hidden" class="form-control" asp-for="edit.id" id="keydown" >
+
+                            <span asp-validation-for="edit.Name" class="error"></span>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.slug" class="control-label">اسلاگ</label>
+                            <input type="text" class="form-control" asp-for="edit.slug" id="result">
+                            <span asp-validation-for="edit.slug" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.UnitPrice" class="control-label">قیمت واحد</label>
+                            <input type="text" class="form-control" asp-for="edit.UnitPrice" id="keydown" >
+                            <span asp-validation-for="edit.UnitPrice" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.code" class="control-label">کد</label>
+                            <input type="text" class="form-control" asp-for="edit.code" id="result">
+                            <span asp-validation-for="edit.code" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="edit.Shortdiscription" class="control-label">توضیحات کوتاه </label>
+                            <input type="text" class="form-control" asp-for="edit.Shortdiscription">
+                            <span asp-validation-for="edit.Discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="edit.Discription" class="control-label">توضیحات </label>
+                            <input type="text" class="form-control" asp-for="edit.Discription">
+
+                            <span asp-validation-for="edit.Discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="edit.Picture" class="control-label">عکس </label>
+                            <input type="text" class="form-control" asp-for="edit.Picture">
+
+                            <span asp-validation-for="edit.Picture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.PictureAlt" class="control-label">Alt</label>
+                            <input type="text" class="form-control" asp-for="edit.PictureAlt" id="keydown" >
+                            <span asp-validation-for="edit.PictureAlt" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.PictureTitle" class="control-label">عنوان عکس</label>
+                            <input type="text" class="form-control" asp-for="edit.PictureTitle" id="result">
+                            <span asp-validation-for="edit.PictureTitle" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.Keywords" class="control-label">کلمات کلیدی</label>
+                            <input type="text" class="form-control" asp-for="edit.Keywords" id="keydown" >
+                            <span asp-validation-for="edit.Keywords" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="edit.Metadiscrption" class="control-label">توضیحات متا</label>
+                            <input type="text" class="form-control" asp-for="edit.Metadiscrption" id="result">
+                            <span asp-validation-for="edit.Metadiscrption" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select asp-for="edit.CategoryId" 
+                                asp-items="Model.Select">
+                            <option>Please select one</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" >بستن</button>
+                <button type="submit" class="btn btn-info waves-effect waves-light" id="button">ایجاد</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Administrator/jquery-validation/dist/jquery.validate.min.js" ></script>
+<script src="Administrator/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" ></script>
+ 

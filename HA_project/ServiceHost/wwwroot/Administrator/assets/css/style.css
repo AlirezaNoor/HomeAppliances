@@ -52,9 +52,23 @@ Date: Jun 2015
  18) RESPONSIVE
 */
 
+.myrightbtn {
+    color: #ffffff !important;
+    display: inline !important;
+    float: right !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+.myleftbtn {
+    display: inline !important;
+    float: left !important;
+    padding-left: 18px !important;
+    padding-right: 18px !important;
+}
+}
 @font-face {
     font-family: 'IranSans';
-    src: url('../../fonts/IranianSans.eot'), url('../../fonts/IranianSans.eot') format('embedded-opentype'), url('../../fonts/IranianSans.woff') format('woff'), url('../../fonts/IranianSans.ttf') format('truetype'), url('../../fonts/IranianSans.svg') format('svg');
+    src: url('../fonts/IranianSans.eot'), url('../fonts/IranianSans.eot') format('embedded-opentype'), url('../fonts/IranianSans.woff') format('woff'), url('../assets/fonts/IranianSans.ttf') format('truetype'), url('../assets/fonts/IranianSans.svg') format('svg');
     font-weight: normal;
     font-style: normal;
 }

@@ -1,0 +1,125 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Product.ProductModels
+@{
+    Layout = null;
+}
+<div class="row" id="test">
+    <div class="col-md-6">
+        <form asp-action="sendTodatabase" asp-controller="Product"   onsubmit="return jQueryAjaxPost(this);">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.Name" class="control-label">نام</label>
+                            <input type="text" class="form-control" asp-for="create.Name" id="keydown" >
+                            <span asp-validation-for="create.Name" class="error"></span>
+                        </div>
+                    </div><div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.slug" class="control-label">اسلاگ</label>
+                            <input type="text" class="form-control" asp-for="create.slug" id="result">
+                            <span asp-validation-for="create.slug" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.UnitPrice" class="control-label">قیمت واحد</label>
+                            <input type="text" class="form-control" asp-for="create.UnitPrice" id="keydown" >
+                            <span asp-validation-for="create.UnitPrice" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.code" class="control-label">کد</label>
+                            <input type="text" class="form-control" asp-for="create.code" id="result">
+                            <span asp-validation-for="create.code" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="create.Shortdiscription" class="control-label">توضیحات کوتاه </label>
+                            <input type="text" class="form-control" asp-for="create.Shortdiscription">
+                            <span asp-validation-for="create.Discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="create.Discription" class="control-label">توضیحات </label>
+                            <input type="text" class="form-control" asp-for="create.Discription">
+
+                            <span asp-validation-for="create.Discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="create.Picture" class="control-label">عکس </label>
+                            <input type="text" class="form-control" asp-for="create.Picture">
+
+                            <span asp-validation-for="create.Picture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.PictureAlt" class="control-label">Alt</label>
+                            <input type="text" class="form-control" asp-for="create.PictureAlt" id="keydown" >
+                            <span asp-validation-for="create.PictureAlt" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.PictureTitle" class="control-label">عنوان عکس</label>
+                            <input type="text" class="form-control" asp-for="create.PictureTitle" id="result">
+                            <span asp-validation-for="create.PictureTitle" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.Keywords" class="control-label">کلمات کلیدی</label>
+                            <input type="text" class="form-control" asp-for="create.Keywords" id="keydown" >
+                            <span asp-validation-for="create.Keywords" class="error"></span>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label asp-for="create.Metadiscrption" class="control-label">توضیحات متا</label>
+                            <input type="text" class="form-control" asp-for="create.Metadiscrption" id="result">
+                            <span asp-validation-for="create.Metadiscrption" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <select asp-for="create.CategoryId" 
+                                asp-items="Model.Select">
+                            <option>Please select one</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" >بستن</button>
+                <button type="submit" class="btn btn-info waves-effect waves-light" id="button">ایجاد</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Administrator/jquery-validation/dist/jquery.validate.min.js" ></script>
+<script src="Administrator/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" ></script>
+ 

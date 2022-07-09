@@ -22,11 +22,25 @@ namespace ServiceHost.Areas.AdminiStrator.Controllers.ProductCategory
             model.ProductCategory = _application.All(command.Search);
             return View(model);
         }
-        [HttpPost]
-        public IActionResult sendTodatabase(ProductCategoryView command)
+        public IActionResult sendTodatabase(long id)
         {
-            _application.Create(command.create);
-            return RedirectToAction("Index");
+   
+            return View();
+        }
+        [HttpPost]
+        public async Task<IActionResult> sendTodatabase( ProductCategoryView command)
+        {
+
+            if (command.create != null) 
+            ;
+            {
+                  _application.Create(command.create);
+                  return Json(new { isValid = true, html =Helper.Helper.RenderRazorViewToString(this, "my", _application.full()) });
+
+            }
+
+            return View(command);
+
         }
 
         public IActionResult Editeds(long id)
@@ -39,8 +53,11 @@ namespace ServiceHost.Areas.AdminiStrator.Controllers.ProductCategory
         public IActionResult Editeds(ProductCategoryView command)
         {
             _application.Edited(command.Edited);
-            return RedirectToAction("Index");
+            return Json(new { isValid = true, html = Helper.Helper.RenderRazorViewToString(this, "my", _application.full()) });
+
         }
 
+
     }
+     
 }

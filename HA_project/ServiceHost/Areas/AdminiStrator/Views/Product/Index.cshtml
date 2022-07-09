@@ -1,0 +1,67 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Product.ProductModels
+@{
+    ViewData["Title"] = "مدیریت محصولات ";
+
+}
+@if (ViewData["delet"]!=null)
+{
+    <div class="alert alert-danger"> @ViewData["delet"]</div>
+}
+<div class="row">
+    <div class="col-sm-12">
+        <h4 class="page-title pull-right">@ViewData["Title"]</h4>
+        <p class="pull-left">
+            <button class="btn btn-success btn-lg" onclick="showInPopup('@Url.Action("sendTodatabase","Product",null,Context.Request.Scheme)', 'New Productcategory')">ایجاد  محصول جدید</button>
+        </p>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">جستجو در گروه محصولات</h3>
+            </div>
+            <div class="panel-body">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row" id="ProductCategoriesDiv">
+    <div class="col-md-12">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">لیست گروه محصولات</h3>
+            </div>
+            <div class="panel-body">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12" id="view-all">
+
+@Html.Partial("_ViewAll",Model);
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+@*============================================*@
+<!-- Modal -->
+@*===================================================*@
+
+@section Scripts {
+<script src="~/Administrator/assets/datatables/jquery.dataTables.min.js"></script>
+<script src="~/Administrator/assets/datatables/dataTables.bootstrap.js"></script>
+
+
+<script src="~/Modal/modals.js"></script>
+<script>
+    $(document).ready(function () {
+        $('#datatable').dataTable();
+    });
+
+
+
+</script>
+}

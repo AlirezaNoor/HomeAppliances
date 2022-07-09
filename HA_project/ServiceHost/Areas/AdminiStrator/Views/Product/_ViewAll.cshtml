@@ -1,0 +1,68 @@
+﻿@model  ServiceHost.Areas.AdminiStrator.Models.Product.ProductModels
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>عکس</th>
+        <th>نام</th>
+        <th>دسته بندی</th>
+        <th>قیمت</th>
+        <th>کد</th>
+        <th>موجودی</th>
+        <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.productviewmodel)
+    {
+        <tr>
+            <td>
+                <img src="@item.picture" style="width: 70px; height: 70px" />
+            </td>
+            <td> @item.Name</td>
+            <td> @item.category</td>
+            <td> @item.UnitPrice</td>
+            <td> @item.code</td>
+            <td>
+                
+                @if (item.IsInStock)
+                {
+                    <i class="fa fa-check" aria-hidden="true"></i>
+
+                }
+                else
+                {
+                    <i class="fa fa-times" aria-hidden="true"></i>
+
+                }
+            </td>
+
+            <td>
+                
+                <a onclick="showInPopup('@Url.Action("Editeds","Product",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> Edit</a>
+                @if (item.IsInStock)
+                {
+                    <form  asp-action="DoemtyProduct">
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-danger myleftbtn"   asp-action="DoemtyProduct"  > حذف </a>
+
+                    </form>
+                    
+                }
+                else
+                {
+                    <form  asp-action="DoProduct">
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-success myleftbtn"   asp-action="DoProduct">ایجاد </a>
+
+                    </form>
+
+                }
+
+            </td>
+        </tr>
+
+    }
+
+    </tbody>
+</table>
