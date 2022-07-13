@@ -1,9 +1,15 @@
 using Microsoft.EntityFrameworkCore;
 using ShopManagemant.Application;
+using ShopManagemant.Application.ProductPictureApplication;
+using ShopManagemant.Application.SliderApp;
 using ShopManagemant.ApplicationContract.Product;
 using ShopManagemant.ApplicationContract.ProductCategory;
+using ShopManagemant.ApplicationContract.ProductPicture;
+using ShopManagemant.ApplicationContract.Slider;
 using ShopManagmant.Domin.Product;
 using ShopManagmant.Domin.ProductCategory;
+using ShopManagmant.Domin.ProductPictureAgg;
+using ShopManagmant.Domin.Slid;
 using ShopManagtemant.Infrastructure.Reposetory;
 using ShopManagtemant.Infrastructure.ShopContext;
 
@@ -15,6 +21,13 @@ builder.Services.AddTransient<IReposetory, Reposetory>();
 builder.Services.AddTransient<IProductCategoryApplication, ProductCategoryApplication>();
 builder.Services.AddTransient<IProductApplication, ProductApplication>();
 builder.Services.AddTransient<IProductReposetory, ProductReposetory>();
+builder.Services.AddTransient<IProductPicture, ProductPicture>();
+builder.Services.AddTransient<IProductPictureApplication, ProductPictureApplication>();
+builder.Services.AddTransient<ISliderReposetory, SliderReposetory>();
+builder.Services.AddTransient<ISliderApplication, SliderApplication>();
+
+
+
 
 
 var conectionstring = builder.Configuration.GetConnectionString("Application");

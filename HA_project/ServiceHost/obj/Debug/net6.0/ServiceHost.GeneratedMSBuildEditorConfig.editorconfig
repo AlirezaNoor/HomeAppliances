@@ -43,6 +43,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0Y2F0ZWdvcnlcX1ZpZXdBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/ProductPicture/Editeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0UGljdHVyZVxFZGl0ZWRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/ProductPicture/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0UGljdHVyZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/ProductPicture/my.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0UGljdHVyZVxteS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/ProductPicture/sendTodatabase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0UGljdHVyZVxzZW5kVG9kYXRhYmFzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/ProductPicture/_ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0UGljdHVyZVxfVmlld0FsbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Product/Editeds.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xQcm9kdWN0XEVkaXRlZHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -69,6 +89,26 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTaGFyZWRcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Slider/Editeds.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTbGlkZXJcRWRpdGVkcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Slider/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTbGlkZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Slider/my.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTbGlkZXJcbXkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Slider/sendTodatabase.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTbGlkZXJcc2VuZFRvZGF0YWJhc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/Slider/_ViewAll.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5pU3RyYXRvclxWaWV3c1xTbGlkZXJcX1ZpZXdBbGwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/Home Appliances/HA_project/ServiceHost/Areas/AdminiStrator/Views/_ViewImports.cshtml]

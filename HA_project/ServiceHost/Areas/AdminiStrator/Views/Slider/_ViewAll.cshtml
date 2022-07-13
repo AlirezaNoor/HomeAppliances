@@ -1,0 +1,62 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Slider.SliderModels
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>عکس</th>
+        <th>نام</th>
+        <th>وضعیت</th>
+        <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.Slider)
+    {
+        <tr>
+            <td>
+                <img src="@item.picture" style="width: 70px; height: 70px" />
+            </td>
+            <td> @item.Title</td>
+            <td>
+    
+                @if (item.ISremove==false)
+                {
+                    <i class="fa fa-check" aria-hidden="true"></i>
+    
+                }
+                else
+                {
+                    <i class="fa fa-times" aria-hidden="true"></i>
+    
+                }
+            </td>
+    
+            <td>
+    
+                <a onclick="showInPopup('@Url.Action("Editeds","Slider",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> Edit</a>
+                @if (item.ISremove==false)
+                {
+                    <form  asp-action="Remove">
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-danger myleftbtn"   asp-action="Remove"  > حذف </a>
+    
+                    </form>
+    
+                }
+                else
+                {
+                    <form  asp-action="Restore">
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-success myleftbtn"   asp-action="Restore">ایجاد </a>
+    
+                    </form>
+    
+                }
+    
+            </td>
+        </tr>
+    
+    }
+
+    </tbody>
+</table>

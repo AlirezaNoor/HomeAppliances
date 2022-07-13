@@ -1,0 +1,60 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.ProductPictureModels.ProductPictureModel
+@{
+    Layout = null;
+}
+<div class="row" id="test">
+    <div class="col-md-6">
+        <form asp-action="sendTodatabase" asp-controller="ProductPicture"   onsubmit="return jQueryAjaxPost(this);">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="create.Picture" class="control-label">نام</label>
+                            <input type="text" class="form-control" asp-for="create.Picture" id="keydown" >
+                            <span asp-validation-for="create.Picture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="create.PictureAlt" class="control-label">توضیحات تصویر</label>
+                            <input type="text" class="form-control" asp-for="create.PictureAlt" id="keydown" >
+                            <span asp-validation-for="create.PictureAlt" class="error"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="create.PictureTitle" class="control-label">توضیحات کوتاه </label>
+                            <input type="text" class="form-control" asp-for="create.PictureTitle">
+                            <span asp-validation-for="create.PictureTitle" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <select asp-for="create.ProductId" asp-items="Model.selectlist">
+                            <option >Please select one</option>
+                        </select>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" >بستن</button>
+                <button type="submit" class="btn btn-info waves-effect waves-light" id="button">ایجاد</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Administrator/jquery-validation/dist/jquery.validate.min.js" ></script>
+<script src="Administrator/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" ></script>
+ 

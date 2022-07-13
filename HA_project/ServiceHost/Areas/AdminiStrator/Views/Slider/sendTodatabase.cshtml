@@ -1,0 +1,72 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Slider.SliderModels
+
+@{
+    Layout = null;
+}
+<div class="row" id="test">
+    <div class="col-md-6">
+        <form asp-action="sendTodatabase" asp-controller="Slider"   onsubmit="return jQueryAjaxPost(this);">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createslider.slidePicture" class="control-label">عکس</label>
+                            <input type="text" class="form-control" asp-for="createslider.slidePicture" id="keydown" >
+                            <span asp-validation-for="createslider.slidePicture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="createslider.headingTitle" class="control-label">سر تیتر</label>
+                            <input type="text" class="form-control" asp-for="createslider.headingTitle" id="keydown" >
+                            <span asp-validation-for="createslider.headingTitle" class="error"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="createslider.title" class="control-label">تیتر</label>
+                            <input type="text" class="form-control" asp-for="createslider.title">
+                            <span asp-validation-for="createslider.title" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="createslider.discription" class="control-label">توضیحات متا</label>
+                            <textarea class="form-control autogrow" asp-for="createslider.discription"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                            <span asp-validation-for="createslider.discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="createslider.Btntitle" class="control-label">متن دکمه</label>
+                            <input type="text" class="form-control" asp-for="createslider.Btntitle">
+                            <span asp-validation-for="createslider.Btntitle" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" >بستن</button>
+                <button type="submit" class="btn btn-info waves-effect waves-light" id="button">ایجاد</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Administrator/jquery-validation/dist/jquery.validate.min.js" ></script>
+<script src="Administrator/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" ></script>
+ 

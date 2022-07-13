@@ -155,6 +155,89 @@ namespace ShopManagtemant.Infrastructure.Migrations
                     b.ToTable("Productcategory", (string)null);
                 });
 
+            modelBuilder.Entity("ShopManagmant.Domin.ProductPicture.ProductPicture", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+
+                    b.Property<bool>("IsRemoved")
+                        .HasColumnType("bit");
+
+                    b.Property<string>("Picture")
+                        .IsRequired()
+                        .HasMaxLength(1000)
+                        .HasColumnType("nvarchar(1000)");
+
+                    b.Property<string>("PictureAlt")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("PictureTitle")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<long>("ProductId")
+                        .HasColumnType("bigint");
+
+                    b.Property<DateTime>("datetime")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProductId");
+
+                    b.ToTable("ProductPictures", (string)null);
+                });
+
+            modelBuilder.Entity("ShopManagmant.Domin.Slid.Slider", b =>
+                {
+                    b.Property<long>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("bigint");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<long>("Id"), 1L, 1);
+
+                    b.Property<string>("Btntitle")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<bool>("ISRemove")
+                        .HasColumnType("bit");
+
+                    b.Property<DateTime>("datetime")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("discription")
+                        .IsRequired()
+                        .HasMaxLength(800)
+                        .HasColumnType("nvarchar(800)");
+
+                    b.Property<string>("headingTitle")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.Property<string>("slidePicture")
+                        .IsRequired()
+                        .HasMaxLength(10000)
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("title")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Slider", (string)null);
+                });
+
             modelBuilder.Entity("ShopManagmant.Domin.Product.Product", b =>
                 {
                     b.HasOne("ShopManagmant.Domin.ProductCategory.ProductCategores", "categoryname")
@@ -164,6 +247,22 @@ namespace ShopManagtemant.Infrastructure.Migrations
                         .IsRequired();
 
                     b.Navigation("categoryname");
+                });
+
+            modelBuilder.Entity("ShopManagmant.Domin.ProductPicture.ProductPicture", b =>
+                {
+                    b.HasOne("ShopManagmant.Domin.Product.Product", "product")
+                        .WithMany("ProductPictures")
+                        .HasForeignKey("ProductId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("product");
+                });
+
+            modelBuilder.Entity("ShopManagmant.Domin.Product.Product", b =>
+                {
+                    b.Navigation("ProductPictures");
                 });
 
             modelBuilder.Entity("ShopManagmant.Domin.ProductCategory.ProductCategores", b =>

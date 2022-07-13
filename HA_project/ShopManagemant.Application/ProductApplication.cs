@@ -97,5 +97,10 @@ namespace ShopManagemant.Application
             _reposetory.Save();
             return operation.Secusees();
         }
+
+        public List<productviewmodel> All()
+        {
+            return _reposetory.GetAll();
+        }
     }
 }

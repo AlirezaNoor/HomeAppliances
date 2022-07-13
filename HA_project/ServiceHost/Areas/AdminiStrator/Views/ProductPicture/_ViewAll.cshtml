@@ -1,0 +1,64 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.ProductPictureModels.ProductPictureModel
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>عکس</th>
+        <th>محصول</th>
+        <th>تاریخ</th>
+        <th>مجودی</th>
+        <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.productpicture)
+    {
+        <tr>
+            <td>
+                <img src="@item.picture" style="width: 70px; height: 70px" />
+            </td>
+            <td> @item.product</td>
+            <td> @item.createdate</td>
+            <td>
+                
+                @if (!item.Instock)
+                {
+                    <i class="fa fa-check" aria-hidden="true"></i>
+
+                }
+                else
+                {
+                    <i class="fa fa-times" aria-hidden="true"></i>
+
+                }
+            </td>
+
+            <td>
+                
+                <a onclick="showInPopup('@Url.Action("Editeds","ProductPicture",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> Edit</a>
+                @if (item.Instock)
+                {
+                    <form  >
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-danger myleftbtn"    > حذف </a>
+
+                    </form>
+                    
+                }
+                else
+                {
+                    <form  >
+                        <input type="hidden" value="@item.id" />
+                        <a type="submit"  asp-route-id="@item.id" class="btn btn-success myleftbtn"  >ایجاد </a>
+
+                    </form>
+
+                }
+
+            </td>
+        </tr>
+
+    }
+
+    </tbody>
+</table>

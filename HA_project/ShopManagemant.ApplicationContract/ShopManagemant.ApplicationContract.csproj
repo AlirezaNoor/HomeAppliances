@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Slider\ISliderApplication.cs~RF5ce0ea.TMP" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\0_Framework\0_Framework.csproj" />
   </ItemGroup>
 

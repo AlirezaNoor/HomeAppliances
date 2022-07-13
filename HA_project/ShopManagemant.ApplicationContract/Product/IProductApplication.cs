@@ -11,6 +11,6 @@ namespace ShopManagemant.ApplicationContract.Product
 
         OperationResult Instock(long id);
         OperationResult NotInstock(long id);
-
+        List<productviewmodel> All();
     }
 }

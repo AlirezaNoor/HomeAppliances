@@ -6,5 +6,6 @@ namespace ShopManagmant.Domin.Product
     public interface IProductReposetory:IGenericReposetory<long,Product>
     {
         List<productviewmodel> search(SearchModel model);
+        List<productviewmodel> GetAll();
     }
 }

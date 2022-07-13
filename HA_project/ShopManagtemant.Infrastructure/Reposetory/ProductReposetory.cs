@@ -48,5 +48,15 @@ namespace ShopManagtemant.Infrastructure.Reposetory
 
             return query.OrderByDescending(x=>x.id).ToList();
         }
+
+        public List<productviewmodel> GetAll()
+        {
+           return _context.prioduct.Include(x=>x.categoryname).Select(x => new productviewmodel()
+            {
+                Name = x.Name,
+                id = x.Id,
+              
+            }).ToList();
+        }
     }
 }

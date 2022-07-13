@@ -1,0 +1,72 @@
+﻿@model ShopManagemant.ApplicationContract.Slider.EditSlider
+@{
+    Layout = null;
+}
+<div class="row" id="test">
+    <div class="col-md-6">
+        <form asp-action="Editeds" asp-controller="Slider"   onsubmit="return jQueryAjaxPost(this);">
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="slidePicture" class="control-label">عکس</label>
+                            <input type="text" class="form-control" asp-for="slidePicture" id="keydown" >
+                            <input type="hidden" class="form-control" asp-for="Id" id="keydown" >
+                            <span asp-validation-for="slidePicture" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+        
+        
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label asp-for="headingTitle" class="control-label">سر تیتر</label>
+                            <input type="text" class="form-control" asp-for="headingTitle" id="keydown" >
+                            <span asp-validation-for="headingTitle" class="error"></span>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="title" class="control-label">تیتر</label>
+                            <input type="text" class="form-control" asp-for="title">
+                            <span asp-validation-for="title" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="discription" class="control-label">توضیحات متا</label>
+                            <textarea class="form-control autogrow" asp-for="discription"
+                              style="overflow: hidden; word-wrap: break-word; resize: horizontal; height: 104px;"></textarea>
+                            <span asp-validation-for="discription" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group no-margin">
+                            <label asp-for="Btntitle" class="control-label">متن دکمه</label>
+                            <input type="text" class="form-control" asp-for="Btntitle">
+                            <span asp-validation-for="Btntitle" class="error"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default waves-effect" data-dismiss="modal" >بستن</button>
+                <button type="submit" class="btn btn-info waves-effect waves-light" id="button">ایجاد</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<script src="Administrator/jquery-validation/dist/jquery.validate.min.js" ></script>
+<script src="Administrator/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js" ></script>
+ 

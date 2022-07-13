@@ -33,6 +33,13 @@ namespace ShopManagmant.Domin.Product
         public long CategoryId { get; private set; }
         public ProductCategores  categoryname { get; private set; }
 
+        public List<ProductPicture.ProductPicture> ProductPictures { get; set; }
+
+        public Product(List<ProductPicture.ProductPicture> productPictures)
+        {
+            ProductPictures = productPictures;
+        }
+
 
         public Product(string name, double unitPrice, string shortdiscription, string discription, string code, string picture, string pictureAlt, string pictureTitle, string slug, string keywords, string metadiscrption, long categoryId)
         {
