@@ -902,11 +902,11 @@
           "lib/net6.0/Microsoft.DotNet.Scaffolding.Shared.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore/6.0.6": {
+      "Microsoft.EntityFrameworkCore/6.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.6",
-          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.6",
+          "Microsoft.EntityFrameworkCore.Abstractions": "6.0.7",
+          "Microsoft.EntityFrameworkCore.Analyzers": "6.0.7",
           "Microsoft.Extensions.Caching.Memory": "6.0.1",
           "Microsoft.Extensions.DependencyInjection": "6.0.0",
           "Microsoft.Extensions.Logging": "6.0.0",
@@ -923,7 +923,7 @@
           "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Abstractions/6.0.6": {
+      "Microsoft.EntityFrameworkCore.Abstractions/6.0.7": {
         "type": "package",
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
@@ -932,7 +932,7 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Analyzers/6.0.6": {
+      "Microsoft.EntityFrameworkCore.Analyzers/6.0.7": {
         "type": "package",
         "compile": {
           "lib/netstandard2.0/_._": {}
@@ -957,10 +957,10 @@
           "build/net6.0/Microsoft.EntityFrameworkCore.Design.props": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.Relational/6.0.6": {
+      "Microsoft.EntityFrameworkCore.Relational/6.0.7": {
         "type": "package",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore": "6.0.7",
           "Microsoft.Extensions.Configuration.Abstractions": "6.0.0"
         },
         "compile": {
@@ -970,11 +970,11 @@
           "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll": {}
         }
       },
-      "Microsoft.EntityFrameworkCore.SqlServer/6.0.6": {
+      "Microsoft.EntityFrameworkCore.SqlServer/6.0.7": {
         "type": "package",
         "dependencies": {
           "Microsoft.Data.SqlClient": "2.1.4",
-          "Microsoft.EntityFrameworkCore.Relational": "6.0.6"
+          "Microsoft.EntityFrameworkCore.Relational": "6.0.7"
         },
         "compile": {
           "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll": {}
@@ -3126,6 +3126,21 @@
           "lib/netstandard1.3/System.Xml.XDocument.dll": {}
         }
       },
+      "01-Query/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManegmant.Infrastructure": "1.0.0",
+          "Inventory.Infrastructure": "1.0.0",
+          "ShopManagtemant.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/01-Query.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/01-Query.dll": {}
+        }
+      },
       "0_Framework/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
@@ -3137,6 +3152,121 @@
         },
         "runtime": {
           "bin/placeholder/0_Framework.dll": {}
+        }
+      },
+      "DiscountManegmant.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManegmant.ApplicationContartct": "1.0.0",
+          "DiscountManegmant.Domin": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManegmant.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManegmant.Application.dll": {}
+        }
+      },
+      "DiscountManegmant.ApplicationContartct/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManegmant.ApplicationContartct.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManegmant.ApplicationContartct.dll": {}
+        }
+      },
+      "DiscountManegmant.Domin/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "DiscountManegmant.ApplicationContartct": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManegmant.Domin.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManegmant.Domin.dll": {}
+        }
+      },
+      "DiscountManegmant.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "DiscountManegmant.Domin": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.7",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.7",
+          "ShopManagtemant.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DiscountManegmant.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DiscountManegmant.Infrastructure.dll": {}
+        }
+      },
+      "Domin.Inventory/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0",
+          "InventoryMangament.Applictioncontract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Domin.Inventory.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Domin.Inventory.dll": {}
+        }
+      },
+      "Inventory.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domin.Inventory": "1.0.0",
+          "InventoryMangament.Applictioncontract": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Inventory.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inventory.Application.dll": {}
+        }
+      },
+      "Inventory.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Domin.Inventory": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "6.0.6",
+          "Microsoft.EntityFrameworkCore.SqlServer": "6.0.6",
+          "ShopManagmant.Domin": "1.0.0",
+          "ShopManagtemant.Infrastructure": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Inventory.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Inventory.Infrastructure.dll": {}
+        }
+      },
+      "InventoryMangament.Applictioncontract/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "0_Framework": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/InventoryMangament.Applictioncontract.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/InventoryMangament.Applictioncontract.dll": {}
         }
       },
       "ShopManagemant.Application/1.0.0": {
@@ -4219,10 +4349,10 @@
         "microsoft.dotnet.scaffolding.shared.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore/6.0.6": {
-      "sha512": "icy5aMdp9R984RGmbgZvcjEX9HYcwqF+6HXLFydL7PJBlc9eVVPRdBSFS9mCFwXyFl24x7xUORhZx/cSLvwH7Q==",
+    "Microsoft.EntityFrameworkCore/6.0.7": {
+      "sha512": "9BsvGSpTzxvqnxH19wLBFivK5TzWmsHZQc/1cQ4b2e+k85aIG9R4FYewQLHZdPrAxNQImXjTyW5nRI3s1rpt6A==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore/6.0.6",
+      "path": "microsoft.entityframeworkcore/6.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -4230,35 +4360,35 @@
         "buildTransitive/net6.0/Microsoft.EntityFrameworkCore.props",
         "lib/net6.0/Microsoft.EntityFrameworkCore.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.xml",
-        "microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.6.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Abstractions/6.0.6": {
-      "sha512": "Z4Ep2LDUSSNjriin0wKH4jF4vsjQ2ICwC9/5ntDVShQqy1C8AmmE5oK25jfthEVSIosDhJoWCescV3xKa9kcpg==",
+    "Microsoft.EntityFrameworkCore.Abstractions/6.0.7": {
+      "sha512": "bjU0CkTqldgpVPTSj9M+R/3EaTz+u0jMeQMIC91YdGYDbpX/tAN5UYx+Ihzk4AtP8gmhburQUgMTdnmCE9c5sA==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.abstractions/6.0.6",
+      "path": "microsoft.entityframeworkcore.abstractions/6.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Abstractions.xml",
-        "microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.abstractions.6.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.abstractions.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Analyzers/6.0.6": {
-      "sha512": "EqBhW1bJnDw42CIGf/Dh1TbYXFUh53pghb5KGMTrxcNU6Ntfd8UEHs7LntZrMQrECrkhW7zBvfGvv9SbxOj5VQ==",
+    "Microsoft.EntityFrameworkCore.Analyzers/6.0.7": {
+      "sha512": "VAOrGma8mRspUb/9quwIr21UZVqfWOcRQqhcYNkHBUD7woenwFTBvntiC9h2Ebtvj/BrRfezqjaHpWVvPSg4dw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.analyzers/6.0.6",
+      "path": "microsoft.entityframeworkcore.analyzers/6.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "analyzers/dotnet/cs/Microsoft.EntityFrameworkCore.Analyzers.dll",
         "lib/netstandard2.0/_._",
-        "microsoft.entityframeworkcore.analyzers.6.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.analyzers.6.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.analyzers.nuspec"
       ]
     },
@@ -4277,31 +4407,31 @@
         "microsoft.entityframeworkcore.design.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.Relational/6.0.6": {
-      "sha512": "sMFh4InretduD2ppxRJ9aArwDgg1EqUMp8iXaMoXn64eGW+8hyvuZGD3VdwJF6qQJWd4B6ns1/zkASR7MHOF2g==",
+    "Microsoft.EntityFrameworkCore.Relational/6.0.7": {
+      "sha512": "0uo4fPDHutMbd9AJJEKl2q/2fYuFGA8tEBE2fQeQFaNDd+F/aUjaXc1FUD84J7Wcax8WP40rZo1E0u9A0yPPZw==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.relational/6.0.6",
+      "path": "microsoft.entityframeworkcore.relational/6.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.Relational.xml",
-        "microsoft.entityframeworkcore.relational.6.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.relational.6.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.relational.nuspec"
       ]
     },
-    "Microsoft.EntityFrameworkCore.SqlServer/6.0.6": {
-      "sha512": "I+IDo9fWRj1/jqtIsqh9C6OzLvN5QACdNVtj0p115k+FDe7xpSqapMZPRf7O37T7fzCamYO9QuNgaOqe7O8j4w==",
+    "Microsoft.EntityFrameworkCore.SqlServer/6.0.7": {
+      "sha512": "D9YV3hc3VSN1qrfdrZcKtMcRLT6bUqj8KtaUdkmO1CH/+meL+8z3Rge5iPhwQ4ol2AwPQlQYVPTTajf9ulSFGg==",
       "type": "package",
-      "path": "microsoft.entityframeworkcore.sqlserver/6.0.6",
+      "path": "microsoft.entityframeworkcore.sqlserver/6.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.dll",
         "lib/net6.0/Microsoft.EntityFrameworkCore.SqlServer.xml",
-        "microsoft.entityframeworkcore.sqlserver.6.0.6.nupkg.sha512",
+        "microsoft.entityframeworkcore.sqlserver.6.0.7.nupkg.sha512",
         "microsoft.entityframeworkcore.sqlserver.nuspec"
       ]
     },
@@ -9686,10 +9816,55 @@
         "system.xml.xdocument.nuspec"
       ]
     },
+    "01-Query/1.0.0": {
+      "type": "project",
+      "path": "../01-Query/01-Query.csproj",
+      "msbuildProject": "../01-Query/01-Query.csproj"
+    },
     "0_Framework/1.0.0": {
       "type": "project",
       "path": "../0_Framework/0_Framework.csproj",
       "msbuildProject": "../0_Framework/0_Framework.csproj"
+    },
+    "DiscountManegmant.Application/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManegmant.Application/DiscountManegmant.Application.csproj",
+      "msbuildProject": "../DiscountManegmant.Application/DiscountManegmant.Application.csproj"
+    },
+    "DiscountManegmant.ApplicationContartct/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManegmant.ApplicationContartct/DiscountManegmant.ApplicationContartct.csproj",
+      "msbuildProject": "../DiscountManegmant.ApplicationContartct/DiscountManegmant.ApplicationContartct.csproj"
+    },
+    "DiscountManegmant.Domin/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManegmant.Domin/DiscountManegmant.Domin.csproj",
+      "msbuildProject": "../DiscountManegmant.Domin/DiscountManegmant.Domin.csproj"
+    },
+    "DiscountManegmant.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../DiscountManegmant.Infrastructure/DiscountManegmant.Infrastructure.csproj",
+      "msbuildProject": "../DiscountManegmant.Infrastructure/DiscountManegmant.Infrastructure.csproj"
+    },
+    "Domin.Inventory/1.0.0": {
+      "type": "project",
+      "path": "../Domin.Inventory/Domin.Inventory.csproj",
+      "msbuildProject": "../Domin.Inventory/Domin.Inventory.csproj"
+    },
+    "Inventory.Application/1.0.0": {
+      "type": "project",
+      "path": "../Inventory.Application/Inventory.Application.csproj",
+      "msbuildProject": "../Inventory.Application/Inventory.Application.csproj"
+    },
+    "Inventory.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Inventory.Infrastructure/Inventory.Infrastructure.csproj",
+      "msbuildProject": "../Inventory.Infrastructure/Inventory.Infrastructure.csproj"
+    },
+    "InventoryMangament.Applictioncontract/1.0.0": {
+      "type": "project",
+      "path": "../InventoryMangament.Applictioncontract/InventoryMangament.Applictioncontract.csproj",
+      "msbuildProject": "../InventoryMangament.Applictioncontract/InventoryMangament.Applictioncontract.csproj"
     },
     "ShopManagemant.Application/1.0.0": {
       "type": "project",
@@ -9714,6 +9889,14 @@
   },
   "projectFileDependencyGroups": {
     "net6.0": [
+      "01-Query >= 1.0.0",
+      "DiscountManegmant.Application >= 1.0.0",
+      "DiscountManegmant.Domin >= 1.0.0",
+      "DiscountManegmant.Infrastructure >= 1.0.0",
+      "Domin.Inventory >= 1.0.0",
+      "Inventory.Application >= 1.0.0",
+      "Inventory.Infrastructure >= 1.0.0",
+      "InventoryMangament.Applictioncontract >= 1.0.0",
       "Microsoft.CodeAnalysis.Features >= 4.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 6.0.6",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 6.0.6",
@@ -9749,6 +9932,30 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
+            "F:\\Home Appliances\\HA_project\\01-Query\\01-Query.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\01-Query\\01-Query.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\DiscountManegmant.Application\\DiscountManegmant.Application.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\DiscountManegmant.Application\\DiscountManegmant.Application.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\DiscountManegmant.Domin\\DiscountManegmant.Domin.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\DiscountManegmant.Domin\\DiscountManegmant.Domin.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\DiscountManegmant.Infrastructure\\DiscountManegmant.Infrastructure.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\DiscountManegmant.Infrastructure\\DiscountManegmant.Infrastructure.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\Domin.Inventory\\Domin.Inventory.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\Domin.Inventory\\Domin.Inventory.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\Inventory.Application\\Inventory.Application.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\Inventory.Application\\Inventory.Application.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
+            },
+            "F:\\Home Appliances\\HA_project\\InventoryMangament.Applictioncontract\\InventoryMangament.Applictioncontract.csproj": {
+              "projectPath": "F:\\Home Appliances\\HA_project\\InventoryMangament.Applictioncontract\\InventoryMangament.Applictioncontract.csproj"
+            },
             "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj": {
               "projectPath": "F:\\Home Appliances\\HA_project\\ShopManagemant.Application\\ShopManagemant.Application.csproj"
             },

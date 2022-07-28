@@ -7,6 +7,14 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\01-Query\01-Query.csproj" />
+    <ProjectReference Include="..\DiscountManegmant.Application\DiscountManegmant.Application.csproj" />
+    <ProjectReference Include="..\DiscountManegmant.Domin\DiscountManegmant.Domin.csproj" />
+    <ProjectReference Include="..\DiscountManegmant.Infrastructure\DiscountManegmant.Infrastructure.csproj" />
+    <ProjectReference Include="..\Domin.Inventory\Domin.Inventory.csproj" />
+    <ProjectReference Include="..\Inventory.Application\Inventory.Application.csproj" />
+    <ProjectReference Include="..\Inventory.Infrastructure\Inventory.Infrastructure.csproj" />
+    <ProjectReference Include="..\InventoryMangament.Applictioncontract\InventoryMangament.Applictioncontract.csproj" />
     <ProjectReference Include="..\ShopManagemant.Application\ShopManagemant.Application.csproj" />
     <ProjectReference Include="..\ShopManagmant.Domin\ShopManagmant.Domin.csproj" />
     <ProjectReference Include="..\ShopManagtemant.Infrastructure\ShopManagtemant.Infrastructure.csproj" />
@@ -24,6 +32,14 @@
 
   <ItemGroup>
     <Folder Include="Areas\AdminiStrator\Data\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <UpToDateCheckInput Remove="Views\Shared\Components\ProductCategoryComponent\Default.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <_ContentIncludedByDefault Remove="Views\Shared\Components\ProductCategoryComponent\Default.cshtml" />
   </ItemGroup>
 
 </Project>

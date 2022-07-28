@@ -1,0 +1,15 @@
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\DiscountManegmant.ApplicationContartct.deps.json
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\DiscountManegmant.ApplicationContartct.dll
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\ref\DiscountManegmant.ApplicationContartct.dll
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\DiscountManegmant.ApplicationContartct.pdb
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\0_Framework.dll
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\bin\Debug\net6.0\0_Framework.pdb
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.csproj.AssemblyReference.cache
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.GeneratedMSBuildEditorConfig.editorconfig
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.AssemblyInfoInputs.cache
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.AssemblyInfo.cs
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.csproj.CoreCompileInputs.cache
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.csproj.CopyComplete
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.dll
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\ref\DiscountManegmant.ApplicationContartct.dll
+F:\Home Appliances\HA_project\DiscountManegmant.ApplicationContartct\obj\Debug\net6.0\DiscountManegmant.ApplicationContartct.pdb

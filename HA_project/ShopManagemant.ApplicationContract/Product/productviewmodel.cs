@@ -8,6 +8,5 @@ public class productviewmodel
     public string category { get; set; }
     public long categoryid { get; set; }
     public string picture { get; set; }
-    public double UnitPrice { get; set; }
-    public  bool IsInStock { get; set; }
+
 }

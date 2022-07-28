@@ -56,21 +56,5 @@ namespace ServiceHost.Areas.AdminiStrator.Controllers.Product
         }
 
 
-        public IActionResult DoemtyProduct(long id)
-        {
-            _application.NotInstock(id);
-            ViewData["delet"] = "عملیات با موفیت انجام شد.";
-
-            return RedirectToAction("Index", ViewData["delet"]);
-        }
-
-        public IActionResult DoProduct(long id)
-        {
-            _application.Instock(id);
-            ViewData["delet"] = "عملیات با موفیت انجام شد.";
-
-
-            return RedirectToAction("Index", ViewData["delet"]);
-        }
     }
 }

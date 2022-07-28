@@ -19,14 +19,12 @@ namespace ShopManagtemant.Infrastructure.Mapping
             builder.Property(x => x.CategoryId).IsRequired();
             builder.Property(x => x.Discription).HasMaxLength(500).IsRequired();
             builder.Property(x => x.slug).HasMaxLength(200).IsRequired();
-            builder.Property(x => x.IsInStock).IsRequired();
             builder.Property(x => x.Picture).HasMaxLength(900).IsRequired();
             builder.Property(x => x.Shortdiscription).HasMaxLength(400).IsRequired();
             builder.Property(x => x.PictureAlt).HasMaxLength(200).IsRequired();
             builder.Property(x => x.PictureTitle).HasMaxLength(200).IsRequired();
             builder.Property(x => x.Keywords).HasMaxLength(200).IsRequired();
             builder.Property(x => x.Metadiscrption).HasMaxLength(200).IsRequired();
-            builder.Property(x => x.UnitPrice).IsRequired();
             builder.Property(x => x.code).HasMaxLength(200).IsRequired();
             builder.HasOne(x => x.categoryname).WithMany(x => x.product).HasForeignKey(x => x.CategoryId);
             builder.HasMany(x => x.ProductPictures).WithOne(x => x.product).HasForeignKey(x => x.ProductId);

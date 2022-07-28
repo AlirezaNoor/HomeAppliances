@@ -21,6 +21,8 @@ namespace ShopManagtemant.Infrastructure.Mapping
             builder.Property(x => x.discription).IsRequired().HasMaxLength(800);
             builder.Property(x => x.headingTitle).IsRequired().HasMaxLength(200);
             builder.Property(x => x.slidePicture).IsRequired().HasMaxLength(10000);
+            builder.Property(x => x.Link).IsRequired().HasMaxLength(100);
+
 
 
 

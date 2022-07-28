@@ -1,0 +1,26 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.Discounts.CustomerDiscountModel
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>کالا</th>
+        <th>شروع تخفیف</th>
+    <th>پایان تخفیف</th>>
+    <th>درصد تخفیف</th>>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.List)
+    {
+        <tr>
+            <td> @item.productname</td>
+            <td> @item.StartDiscount</td>
+            <td> @item.EndDiscount</td>
+            <td> @item.DiscountRate</td>
+
+
+        </tr>
+
+    }
+
+    </tbody>
+</table>

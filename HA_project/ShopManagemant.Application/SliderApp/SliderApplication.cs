@@ -21,8 +21,8 @@ namespace ShopManagemant.Application.SliderApp
                 operation.faild();
             }
 
-            var model = new Slider(command.slidePicture, command.headingTitle, command.title, command.discription,
-                command.Btntitle);
+            var model = new Slider(command.slidePicture,command.headingTitle, command.title, command.discription,
+                command.Btntitle,command.link);
             _reposetory.Create(model);
             _reposetory.Save();
             return operation.Secusees();
@@ -33,7 +33,7 @@ namespace ShopManagemant.Application.SliderApp
         {
         
             var commands = _reposetory.GetById(command.Id);
-            commands.Edited(command.slidePicture, command.headingTitle, command.title, command.discription, command.Btntitle);
+            commands.Edited(command.slidePicture,command.link, command.headingTitle, command.title, command.discription, command.Btntitle);
             _reposetory.Save();
         }
 
@@ -50,6 +50,7 @@ namespace ShopManagemant.Application.SliderApp
                 headingTitle = slider.headingTitle,
                 Id = slider.Id,
                 slidePicture = slider.slidePicture,
+                link = slider.Link
 
             };
         }

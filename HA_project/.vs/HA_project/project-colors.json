@@ -35,7 +35,52 @@
       "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
       "DisplayName": "Miscellaneous Files",
       "ColorIndex": -1
+    },
+    "fbf04f01-a8a2-48e9-a326-ca78ff97d84c": {
+      "ProjectGuid": "fbf04f01-a8a2-48e9-a326-ca78ff97d84c",
+      "DisplayName": "DiscountManegmant.ApplicationContartct",
+      "ColorIndex": 6
+    },
+    "de57810d-30e8-4f07-854b-6cba30b76522": {
+      "ProjectGuid": "de57810d-30e8-4f07-854b-6cba30b76522",
+      "DisplayName": "DiscountManegmant.Application",
+      "ColorIndex": 7
+    },
+    "53ee6059-9f70-4387-a4a2-32b2aee163c1": {
+      "ProjectGuid": "53ee6059-9f70-4387-a4a2-32b2aee163c1",
+      "DisplayName": "DiscountManegmant.Infrastructure",
+      "ColorIndex": 8
+    },
+    "88b66f76-5b4e-44b9-b923-75d15dc62dfb": {
+      "ProjectGuid": "88b66f76-5b4e-44b9-b923-75d15dc62dfb",
+      "DisplayName": "DiscountManegmant.Domin",
+      "ColorIndex": 9
+    },
+    "d5504831-bd64-4ab0-9820-a50aa3063227": {
+      "ProjectGuid": "d5504831-bd64-4ab0-9820-a50aa3063227",
+      "DisplayName": "Domin.Inventory",
+      "ColorIndex": 10
+    },
+    "46d33a0e-b42c-46a0-9db4-809dbc21dd1b": {
+      "ProjectGuid": "46d33a0e-b42c-46a0-9db4-809dbc21dd1b",
+      "DisplayName": "InventoryMangament.Applictioncontract",
+      "ColorIndex": 11
+    },
+    "e4437918-b54d-4e95-aa1d-705399595964": {
+      "ProjectGuid": "e4437918-b54d-4e95-aa1d-705399595964",
+      "DisplayName": "Inventory.Application",
+      "ColorIndex": 12
+    },
+    "758c920c-cd8d-47fa-9c89-23ebf558182c": {
+      "ProjectGuid": "758c920c-cd8d-47fa-9c89-23ebf558182c",
+      "DisplayName": "Inventory.Infrastructure",
+      "ColorIndex": 13
+    },
+    "78144c6b-c310-412a-aea6-443664fbb3f1": {
+      "ProjectGuid": "78144c6b-c310-412a-aea6-443664fbb3f1",
+      "DisplayName": "01-Query",
+      "ColorIndex": 14
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 15
 }

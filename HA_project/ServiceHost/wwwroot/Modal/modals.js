@@ -6,6 +6,11 @@
             $('#form-modal .modal-body').html(res);
             $('#form-modal .modal-title').html(title);
             $('#form-modal').modal('show');
+            $('.persianDateInput').persianDatepicker({
+                format: 'YYYY/MM/DD',
+                autoClose: true,
+                initialValueType: "persian"
+            });
         }
     });
 },
@@ -23,7 +28,7 @@ jQueryAjaxPost = form => {
                     $('#form-modal .modal-body').html('');
                     $('#form-modal .modal-title').html('');
                     $('#form-modal').modal('hide');
-                   
+
                 }
                 else
                     $('#form-modal .modal-body').html(res.html);

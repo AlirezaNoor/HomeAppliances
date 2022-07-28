@@ -9,8 +9,7 @@ namespace ShopManagemant.ApplicationContract.Product
         EditProducts details(long id);
         List<productviewmodel> search(SearchModel command);
 
-        OperationResult Instock(long id);
-        OperationResult NotInstock(long id);
         List<productviewmodel> All();
+        List<productviewmodel> getList();
     }
 }

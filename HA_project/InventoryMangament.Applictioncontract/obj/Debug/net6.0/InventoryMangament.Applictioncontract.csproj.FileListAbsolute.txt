@@ -1,0 +1,15 @@
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\InventoryMangament.Applictioncontract.deps.json
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\InventoryMangament.Applictioncontract.dll
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\ref\InventoryMangament.Applictioncontract.dll
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\InventoryMangament.Applictioncontract.pdb
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\0_Framework.dll
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\bin\Debug\net6.0\0_Framework.pdb
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.csproj.AssemblyReference.cache
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.GeneratedMSBuildEditorConfig.editorconfig
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.AssemblyInfoInputs.cache
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.AssemblyInfo.cs
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.csproj.CoreCompileInputs.cache
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.csproj.CopyComplete
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.dll
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\ref\InventoryMangament.Applictioncontract.dll
+F:\Home Appliances\HA_project\InventoryMangament.Applictioncontract\obj\Debug\net6.0\InventoryMangament.Applictioncontract.pdb

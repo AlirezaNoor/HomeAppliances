@@ -1,0 +1,35 @@
+﻿@model  ServiceHost.Areas.AdminiStrator.Models.Inventory.InventoryModel;
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+    <tr>
+        <th>محصول</th>
+        <th>قیمت</th>
+        <th>موجودی انبار</th>
+        <th>عملیات</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var item in Model.inventoryview)
+    {
+        <tr>
+
+            <td> @item.Productname</td>
+            <td> @item.price</td>
+            <td> @item.currentcount</td>
+
+            <td>
+                
+                <a onclick="showInPopup('@Url.Action("Editeds","Inventory",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> Edit</a>
+                <a onclick="showInPopup('@Url.Action("Addtoinventory","Inventory",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> افزایش</a>
+                <a onclick="showInPopup('@Url.Action("Deletfrominventory","Inventory",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> کاهش</a>
+                <a onclick="showInPopup('@Url.Action("Log","Inventory",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> گردش انبار</a>
+
+
+            </td>
+        </tr>
+
+    }
+
+    </tbody>
+</table>

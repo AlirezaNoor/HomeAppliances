@@ -1,4 +1,5 @@
 F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.deps.json
+F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.runtimeconfig.json
 F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.dll
 F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ref\ShopManagmant.Domin.dll
 F:\Home Appliances\HA_project\ShopManagmant.Domin\bin\Debug\net6.0\ShopManagmant.Domin.pdb
@@ -15,3 +16,4 @@ F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant
 F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.dll
 F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ref\ShopManagmant.Domin.dll
 F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.pdb
+F:\Home Appliances\HA_project\ShopManagmant.Domin\obj\Debug\net6.0\ShopManagmant.Domin.genruntimeconfig.cache

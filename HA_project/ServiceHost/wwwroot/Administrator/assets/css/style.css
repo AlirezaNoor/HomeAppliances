@@ -54,20 +54,24 @@ Date: Jun 2015
 
 
 
+/* @font-face { */
+/*     font-family: 'IranSans' !important; */
+/*     src: url('../fonts/IranianSans.eot'), url('../fonts/IranianSans.eot') format('embedded-opentype'), url('../fonts/IranianSans.woff') format('woff'), url('../fonts/IranianSans.ttf') format('truetype'), url('../fonts/IranianSans.svg') format('svg'); */
+/*     font-weight: normal !important; */
+/*     font-style: normal !important; */
+/* } */
 @font-face {
-    font-family: 'IranSans' !important;
-    src: url('../fonts/IranianSans.eot'), url('../fonts/IranianSans.eot') format('embedded-opentype'), url('../fonts/IranianSans.woff') format('woff'), url('../fonts/IranianSans.ttf') format('truetype'), url('../fonts/IranianSans.svg') format('svg');
-    font-weight: normal !important;
-    font-style: normal !important;
+    font-family: myFirstFont;
+    src: url(../fonts/IranianSans.ttf);
 }
 
 /******** 1. General ********/
-
+* { font-family: myFirstFont; }
 body {
     background: #f5f5f5;
     margin: 0;
     -webkit-text-size-adjust: 100%;
-    font-family: IranSans !important;
+    font-family: myFirstFont !important;
     direction: rtl;
 }
 .myrightbtn {
@@ -92,6 +96,7 @@ h4,
 h5,
 h6 {
     margin: 10px 0;
+    font-family: myFirstFont !important;
 }
 
 h1 { line-height: 43px; }

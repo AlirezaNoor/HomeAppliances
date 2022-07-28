@@ -23,7 +23,7 @@ namespace ShopManagemant.Application
             }
 
             var slug = command.slug.Slugify();
-            var product = new Product(command.Name, command.UnitPrice, command.Shortdiscription, command.Discription, command.code, command.Picture, command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.Metadiscrption, command.CategoryId);
+            var product = new Product(command.Name,command.Shortdiscription, command.Discription, command.code, command.Picture, command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.Metadiscrption, command.CategoryId);
             _reposetory.Create(product);
           _reposetory.Save();
             return operation.Secusees();
@@ -38,7 +38,7 @@ namespace ShopManagemant.Application
                 return operation.faild(ValidforApplication.mojodnist);
             }
             var slug = command.slug.Slugify();
-            product.Edit(command.Name, command.UnitPrice, command.Shortdiscription, command.Discription, command.code, command.Picture, command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.Metadiscrption, command.CategoryId);
+            product.Edit(command.Name, command.Shortdiscription, command.Discription, command.code, command.Picture, command.PictureAlt, command.PictureTitle, slug, command.Keywords, command.Metadiscrption, command.CategoryId);
             _reposetory.Save();
             return operation.Secusees();
         }
@@ -53,14 +53,13 @@ namespace ShopManagemant.Application
                 slug = product.slug,
                 Shortdiscription = product.Shortdiscription,
                 id = product.Id,
-                IsInStock = product.IsInStock,
                 Keywords = product.Keywords,
                 Metadiscrption = product.Metadiscrption,
                 Name = product.Name,
                 Picture = product.Picture,
                 PictureAlt = product.PictureAlt,
                 PictureTitle = product.PictureTitle,
-                UnitPrice = product.UnitPrice,
+
                 code = product.code,
             };
         }
@@ -70,37 +69,15 @@ namespace ShopManagemant.Application
             return _reposetory.search(command);
         }
 
-        public OperationResult Instock(long id)
-        {
-            var operation = new OperationResult();
-            var product=_reposetory.GetById(id);
-            if (product==null)
-            {
-                return operation.faild(ValidforApplication.mojodnist);
-            }
-
-            product.InStock();
-            _reposetory.Save();
-            return operation.Secusees();
-        }
-
-        public OperationResult NotInstock(long id)
-        {
-            var operation = new OperationResult();
-            var product = _reposetory.GetById(id);
-            if (product == null)
-            {
-                return operation.faild(ValidforApplication.mojodnist);
-            }
-
-            product.NotInStock();
-            _reposetory.Save();
-            return operation.Secusees();
-        }
 
         public List<productviewmodel> All()
         {
             return _reposetory.GetAll();
+        }
+
+        public List<productviewmodel> getList()
+        {
+            return _reposetory.GetAll().Select(x => new productviewmodel() {id = x.id, Name = x.Name}).ToList();
         }
     }
 }

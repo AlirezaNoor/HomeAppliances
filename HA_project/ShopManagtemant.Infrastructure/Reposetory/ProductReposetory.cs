@@ -25,13 +25,12 @@ namespace ShopManagtemant.Infrastructure.Reposetory
             var query = _context.prioduct.Include(x => x.categoryname).Select(x => new productviewmodel()
             {
                 Name = x.Name,
-                UnitPrice = x.UnitPrice,
+
                 category = x.categoryname.Title,
                 categoryid = x.CategoryId,
                 code = x.code,
                 id = x.Id,
                 picture = x.Picture,
-                IsInStock = x.IsInStock
             });
             // if (!string.IsNullOrWhiteSpace(model.name))
             // {

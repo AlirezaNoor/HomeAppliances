@@ -3,10 +3,8 @@
     public class Create
     {
               public string Name { get; set; }
-               public double UnitPrice { get; set; }
                public string Shortdiscription { get; set; }
                public string Discription { get; set; }
-               public bool IsInStock { get; set; }
                 public string code { get; set; }
                  public string Picture { get; set; }
                public string PictureAlt { get; set; }

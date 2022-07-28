@@ -1,0 +1,28 @@
+﻿@model ServiceHost.Areas.AdminiStrator.Models.ColleagueDiscount.ColleagueDiscountModels;
+
+<table id="datatable" class="table table-striped table-bordered">
+    <thead>
+        <tr>
+            <th>کالا</th>
+            <th>درصد تخفیف</th>
+            <th>تاریخ اعمال</th>
+            <th>عملیات</th>
+
+    </thead>
+    <tbody>
+        @foreach (var item in Model.All)
+        {
+            <tr>
+                <td> @item.Productname</td>
+                <td> @item.DiscountRang</td>
+                <td> @item.createdate</td>
+                <td>
+
+                    <a onclick="showInPopup('@Url.Action("Editeds","ColleagueDiscount",new {id=item.id},Context.Request.Scheme)', 'Update Transaction')" class="btn btn-info myrightbtn"><i class="fas fa-pencil-alt"></i> Edit</a>
+                </td>
+            </tr>
+
+        }
+
+    </tbody>
+</table>

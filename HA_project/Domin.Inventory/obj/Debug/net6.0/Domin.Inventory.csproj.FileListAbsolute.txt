@@ -1,0 +1,17 @@
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\Domin.Inventory.deps.json
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\Domin.Inventory.dll
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\ref\Domin.Inventory.dll
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\Domin.Inventory.pdb
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\0_Framework.dll
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\InventoryMangament.Applictioncontract.dll
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\0_Framework.pdb
+F:\Home Appliances\HA_project\Domin.Inventory\bin\Debug\net6.0\InventoryMangament.Applictioncontract.pdb
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.csproj.AssemblyReference.cache
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.GeneratedMSBuildEditorConfig.editorconfig
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.AssemblyInfoInputs.cache
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.AssemblyInfo.cs
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.csproj.CoreCompileInputs.cache
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.csproj.CopyComplete
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.dll
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\ref\Domin.Inventory.dll
+F:\Home Appliances\HA_project\Domin.Inventory\obj\Debug\net6.0\Domin.Inventory.pdb
